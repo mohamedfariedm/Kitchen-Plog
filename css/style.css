@@ -1,0 +1,122 @@
+*{
+  transition: all .5s ease-out;
+}
+.layer{
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.776);
+  transform: translateY(100%);
+}
+
+.parent:hover .layer{
+  transform: translateY(0);
+}
+li,i{
+  cursor: pointer;
+}
+.bg-color{
+  background-color: rgb(120, 182, 193);
+}
+.tag{
+  background-color: rgb(212, 118, 91);
+}
+
+body{
+  overflow: hidden;
+}
+
+.trans{
+  transform: translateX(-81%);
+}
+.trans-y{
+  transform: translateY(100%);
+}
+.mt-10{
+  margin-top: 15%;
+}
+
+::placeholder { 
+  color:white !important;
+  opacity: 1 !important; 
+} 
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: white !important;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: white !important;
+}
+
+
+.placeholde-black::placeholder {
+  color:rgb(25, 22, 22) !important;
+  opacity: 1 !important;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 10000000;
+}
+
+
+
+.wave {
+  width: 5px;
+  height: 100px;
+  background: linear-gradient(45deg, rgb(13, 24, 219), #903b3b);
+  margin: 10px;
+  animation: wave 1s linear infinite;
+  border-radius: 20px;
+}
+.wave:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.wave:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.wave:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.wave:nth-child(5) {
+  animation-delay: 0.4s;
+}
+.wave:nth-child(6) {
+  animation-delay: 0.5s;
+}
+.wave:nth-child(7) {
+  animation-delay: 0.6s;
+}
+.wave:nth-child(8) {
+  animation-delay: 0.7s;
+}
+.wave:nth-child(9) {
+  animation-delay: 0.8s;
+}
+.wave:nth-child(10) {
+  animation-delay: 0.9s;
+}
+
+@keyframes wave {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+
+
